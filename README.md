@@ -1,6 +1,6 @@
 # TailorFlow
 
-TailorFlow is a mobile-first tailoring shop manager built with Expo and React Native. It helps a tailor keep customer measurements, garment orders, outstanding balances, and payment records in one simple offline-friendly app.
+TailorFlow is a mobile-first tailoring shop manager built with Expo and React Native. It helps a tailor keep customer measurements, garment orders, outstanding balances, and payment records in one simple offline-friendly app....
 
 ## Features
 
