@@ -55,16 +55,20 @@ export default function Login() {
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
-      {/* Top Header bar with back button */}
+      {/* Top Header bar */}
       <View style={styles.topBar}>
-        <TouchableOpacity
-          onPress={() => router.back()}
-          style={styles.backButton}
-          activeOpacity={0.7}
-        >
-          <ArrowLeft size={22} color={colors.text} />
-          <Text style={styles.backText}>Home</Text>
-        </TouchableOpacity>
+        {authMode === 'pin' ? (
+          <TouchableOpacity
+            onPress={() => setAuthMode('phone')}
+            style={styles.backButton}
+            activeOpacity={0.7}
+          >
+            <ArrowLeft size={22} color={colors.text} />
+            <Text style={styles.backText}>Phone</Text>
+          </TouchableOpacity>
+        ) : (
+          <View style={{ width: 60 }} />
+        )}
         <Text style={styles.topBarTitle}>
           {authMode === 'phone' ? 'Tailor Login' : 'Quick Access PIN'}
         </Text>

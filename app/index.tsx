@@ -53,6 +53,6 @@ export default function Index() {
     return <Redirect href="/(tabs)" />;
   }
 
-  // Otherwise, first-time tailor sees onboarding
-  return <Redirect href="/onboarding" />;
+  // If not logged in, go directly to the Login page
+  return <Redirect href="/auth/login" />;
 }
